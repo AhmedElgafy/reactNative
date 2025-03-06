@@ -1,6 +1,12 @@
-import { View, Text, ScrollView } from "react-native";
-import React from "react";
-import { BrownRosy, Terracotta } from "@/constants/Colors";
+import {
+  View,
+  Text,
+  ScrollView,
+  TouchableOpacity,
+  Pressable,
+} from "react-native";
+import React, { useState } from "react";
+import { Beige, BrownRosy, Salmon, Terracotta } from "@/constants/Colors";
 
 // Import SVGs directly
 import BedRoom from "@assets/images/bedRoom.svg";
@@ -22,17 +28,12 @@ const categories = [
 ];
 
 export default function Categories() {
+  const [activeIndex, setActiveIndex] = useState<null | number>(null);
   return (
     <View>
-      <Text
-        style={[TextStyle.subTitle]}
-      >
-        Categories
-      </Text>
+      <Text style={[TextStyle.subTitle]}>Categories</Text>
       <ScrollView
-      
-
-        horizontal={true}
+        horizontal
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{
           gap: 5,
@@ -41,10 +42,12 @@ export default function Categories() {
         {categories.map((category, index) => {
           const Icon = category.icon; // Get the imported SVG component
           return (
-            <View
+            <Pressable
               key={index}
+              onPressIn={() => setActiveIndex(index)}
+              onPressOut={() => setActiveIndex(null)}
               style={{
-                backgroundColor: BrownRosy,
+                backgroundColor: index == activeIndex ? Salmon : Beige,
                 flex: 1,
                 alignItems: "center",
                 justifyContent: "center",
@@ -54,9 +57,13 @@ export default function Categories() {
               }}
             >
               <Text>
-                <Icon width={42} height={42} />
+                <Icon
+                  width={42}
+                  stroke={index == activeIndex ? Terracotta : BrownRosy}
+                  height={42}
+                />
               </Text>
-            </View>
+            </Pressable>
           );
         })}
       </ScrollView>

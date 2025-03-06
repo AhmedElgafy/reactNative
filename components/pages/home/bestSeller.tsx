@@ -16,16 +16,16 @@ export default function BestSeller() {
           backgroundColor: Salmon,
           borderRadius: 12,
           paddingHorizontal: 25,
-          height: 132,
+          paddingVertical: 10,
+          // height: 132,
           justifyContent: "center",
         }}
       >
         <Text style={[TextStyle.subTitle, { color: Dark, marginBottom: 16 }]}>
           Kitchen Cart
         </Text>
-        <Text style={{ fontSize: 13 }}>
-          Lorem ipsum dolor sit amet,
-          <br />
+        <Text style={{ fontSize: 13,width:"50%" }}>
+          Lorem ipsum dolor sit amet,{"\n"}
           consectetur adipiscing elit
         </Text>
         <Image

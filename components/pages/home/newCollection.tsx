@@ -16,13 +16,27 @@ export default function NewCollection() {
       title: "Stylish chair",
       bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     },
+    {
+      id: "4",
+      image: require("@/assets/images/Rectangle 22.png"),
+      title: "Stylish chair",
+      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    },
+    {
+      id: "3",
+      image: require("@/assets/images/Rectangle 22.png"),
+      title: "Stylish chair",
+      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    },
   ];
 
   return (
     <View>
       <Text style={TextStyle.subTitle}>New Collection</Text>
       <FlatList
-        numColumns={2}
+        // numColumns={2}
+        showsHorizontalScrollIndicator={false}
+        horizontal
         data={items}
         renderItem={({ item }) => (
           <View style={{ width: 163 }}>
@@ -38,8 +52,8 @@ export default function NewCollection() {
           </View>
         )}
         keyExtractor={(item) => item.id}
-        columnWrapperStyle={{ justifyContent: "space-between" }}
-        contentContainerStyle={{ gap: 10 }}
+        // columnWrapperStyle={{ justifyContent: "space-between" }}
+        contentContainerStyle={{ gap: 23 }}
       />
     </View>
   );
