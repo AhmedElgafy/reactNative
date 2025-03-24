@@ -14,8 +14,8 @@ const App = () => {
   const [text, setText] = useState("search");
   return (
     <SafeAreaProvider style={{ paddingHorizontal: 22 }}>
-      <Header />
       <SafeAreaView style={{ flex: 1 }}>
+      <Header />
         <ScrollView
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{ paddingBottom: 50 }}

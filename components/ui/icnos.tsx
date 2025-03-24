@@ -10,6 +10,8 @@ import SettingIcon from "@assets/icons/setting.svg";
 import HelpIcon from "@assets/icons/help.svg";
 import LogoutIcon from "@assets/icons/logout.svg";
 import NotificationIcon from "@assets/icons/notification.svg";
+import BackwardIcon from "@assets/icons/backward.svg";
+import EditProfileIcon from "@assets/icons/editProfile.svg"
 export {
   CartIcon,
   OrdersIcon,
@@ -22,5 +24,7 @@ export {
   SettingIcon,
   HelpIcon,
   LogoutIcon,
-  NotificationIcon
+  NotificationIcon,
+  BackwardIcon,
+  EditProfileIcon
 };
