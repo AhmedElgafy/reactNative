@@ -99,11 +99,11 @@ interface IconProps {
 }
 function Icon({ color, focused, Icon }: IconProps) {
   return (
-    <View style={{ justifyContent: "space-between", gap: 6 }}>
+    <View style={{ justifyContent: "space-between", gap: 6,position:"relative" }}>
       <Icon size={28} stroke={color} />
       {focused && (
         <View
-          style={{ backgroundColor: "black", width: "100%", height: 2 }}
+          style={{ backgroundColor: "black", width: "100%",bottom:-6, position:"absolute", height: 2 }}
         ></View>
       )}
     </View>

@@ -12,9 +12,20 @@ import DateTimePicker, {
 } from "@react-native-community/datetimepicker";
 
 export default function ProfileForm() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <>
-      <DateTimePicker  value={new Date()} />
+      <Button title="Click me" onPress={() => setIsOpen(!isOpen)} />
+      {isOpen && (
+        <DateTimePicker
+          value={new Date()}
+          onChange={(data) => {
+            const date = new Date(data.nativeEvent.timestamp);
+            console.log("changes", date);
+            setIsOpen(false);
+          }}
+        />
+      )}
     </>
   );
 }
