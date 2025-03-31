@@ -24,7 +24,7 @@ export default function BestSeller() {
         <Text style={[TextStyle.subTitle, { color: Dark, marginBottom: 16 }]}>
           Kitchen Cart
         </Text>
-        <Text style={{ fontSize: 13,width:"50%" }}>
+        <Text style={{ fontSize: 13, width: "50%" }}>
           Lorem ipsum dolor sit amet,{"\n"}
           consectetur adipiscing elit
         </Text>
