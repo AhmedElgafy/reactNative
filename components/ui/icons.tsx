@@ -11,7 +11,11 @@ import HelpIcon from "@assets/icons/help.svg";
 import LogoutIcon from "@assets/icons/logout.svg";
 import NotificationIcon from "@assets/icons/notification.svg";
 import BackwardIcon from "@assets/icons/backward.svg";
-import EditProfileIcon from "@assets/icons/editProfile.svg"
+import EditProfileIcon from "@assets/icons/editProfile.svg";
+import CardIcon from "@assets/icons/Card icon.svg";
+import PaypalIcon from "@assets/icons/Paypal.svg";
+import Mac from "@assets/icons/Mac.svg";
+import Cash from "@assets/icons/Cash.svg";
 export {
   CartIcon,
   OrdersIcon,
@@ -26,5 +30,9 @@ export {
   LogoutIcon,
   NotificationIcon,
   BackwardIcon,
-  EditProfileIcon
+  EditProfileIcon,
+  CardIcon,
+  PaypalIcon,
+  Mac,
+  Cash,
 };

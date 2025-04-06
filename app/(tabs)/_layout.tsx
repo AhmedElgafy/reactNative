@@ -10,7 +10,7 @@ import {
   CartIcon,
   WishlistIcon,
   ProfileIcon,
-} from "@/components/ui/icnos";
+} from "@/components/ui/icons";
 // import CartIcon from "@assets/icons/cart.svg";
 // import CategoriesIcon from "@assets/icons/categories.svg";
 // import HomeIcon from "@assets/icons/home.svg";
@@ -27,6 +27,7 @@ export default function TabLayout() {
         tabBarInactiveTintColor: Salmon,
         headerShown: false,
         tabBarButton: HapticTab,
+        // headerShadowVisible: false,
 
         tabBarBackground: TabBarBackground,
         // tabBarIconStyle: { backgroundColor: "black" },
@@ -99,11 +100,21 @@ interface IconProps {
 }
 function Icon({ color, focused, Icon }: IconProps) {
   return (
-    <View style={{ justifyContent: "space-between", gap: 6,position:"relative" }}>
+    <View
+      style={{ justifyContent: "space-between", gap: 6, position: "relative" }}
+    >
       <Icon size={28} stroke={color} />
       {focused && (
         <View
-          style={{ backgroundColor: "black", width: "100%",bottom:-6, position:"absolute", height: 2 }}
+          style={{
+            backgroundColor: "black",
+            width: "100%",
+            bottom: -6,
+            position: "absolute",
+            left:"-50%",
+            transform:[{translateX:"50%"}],
+            height: 2,
+          }}
         ></View>
       )}
     </View>

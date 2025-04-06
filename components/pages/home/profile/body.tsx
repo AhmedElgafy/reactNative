@@ -7,7 +7,7 @@ import {
   SettingIcon,
   HelpIcon,
   LogoutIcon,
-} from "@/components/ui/icnos";
+} from "@/components/ui/icons";
 import { Salmon } from "@/constants/Colors";
 import { ExternalPathString, Link, RelativePathString } from "expo-router";
 interface Item {
@@ -24,7 +24,7 @@ const bodyItems: Item[] = [
   {
     title: "Payment Methods",
     Icon: PaymentIcon,
-    href: "../",
+    href: "./profile/payment-method",
   },
   {
     title: "Notification",

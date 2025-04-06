@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import React from "react";
 import { Link, Stack, useRouter } from "expo-router";
-import { BackwardIcon, EditProfileIcon } from "@/components/ui/icnos";
+import { BackwardIcon, EditProfileIcon } from "@/components/ui/icons";
 import { Salmon } from "@/constants/Colors";
 function LogoTitle(props: { children: string }) {
   return (
@@ -24,6 +24,7 @@ export default function Layout() {
   return (
     <Stack
       screenOptions={{
+        contentStyle: { backgroundColor: "#FFFFFF" },
         headerTitle: (props) => <LogoTitle {...props} />,
         headerLeft: () => {
           const router = useRouter();
@@ -41,7 +42,7 @@ export default function Layout() {
           );
         },
         headerTitleAlign: "center",
-        headerStyle: { backgroundColor: "#f2f2f2" },
+        headerStyle: { backgroundColor: "white" },
         headerShadowVisible: false,
       }}
     >
@@ -64,6 +65,11 @@ export default function Layout() {
         }}
       />
       <Stack.Screen name="edit-profile" options={{ title: "Edit Profile" }} />
+      <Stack.Screen name="my-orders" options={{ title: "My Orders" }} />
+      <Stack.Screen
+        name="payment-method"
+        options={{ title: " Payment Method" }}
+      />
     </Stack>
   );
 }
