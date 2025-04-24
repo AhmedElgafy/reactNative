@@ -1,27 +1,29 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, ViewStyle, StyleProp } from "react-native";
 import React from "react";
 import { OrangeDark, Salmon } from "@/constants/Colors";
 interface ButtonUIProps {
   loading?: boolean;
   onPress?: () => void;
   text: string;
+  style?:StyleProp<ViewStyle>
 }
 export default function ButtonUI({
   loading = false,
   onPress = () => {},
   text = "Text",
+  style={marginTop: 52}
 }: ButtonUIProps) {
   return (
     <TouchableOpacity
       disabled={loading}
-      style={{
+      style={[{
         opacity: loading ? 0.2 : 1,
         width: 208,
         backgroundColor: Salmon,
         borderRadius: 19,
         marginHorizontal: "auto",
-        marginTop: 52,
-      }}
+        // marginTop: 52,
+      },style]}
       onPress={() => onPress()}
     >
       <Text

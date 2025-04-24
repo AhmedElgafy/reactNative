@@ -29,12 +29,12 @@ const bodyItems: Item[] = [
   {
     title: "Notification",
     Icon: NotificationIcon,
-    href: "../",
+    href: "./profile/notification",
   },
   {
     title: "Settings",
     Icon: SettingIcon,
-    href: "../",
+    href: "./profile/password-setting",
   },
   {
     title: "Help",

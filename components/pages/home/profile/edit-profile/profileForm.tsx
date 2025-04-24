@@ -15,6 +15,7 @@ import { Formik, FormikHelpers } from "formik";
 import { Beige, OrangeDark, Salmon } from "@/constants/Colors";
 import formFields from "./fields";
 import { FormValues } from "@/types/user";
+import { InputStyle } from "@/styles/input.style";
 
 export default function ProfileForm() {
   const initValues: FormValues = {
@@ -104,10 +105,5 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around",
   },
-  fieldStyle: {
-    backgroundColor: Beige,
-    height: 45,
-    borderRadius: 15,
-    paddingHorizontal: 20,
-  },
+  fieldStyle: InputStyle.fieldStyle,
 });

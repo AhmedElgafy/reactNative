@@ -16,6 +16,7 @@ import CardIcon from "@assets/icons/Card icon.svg";
 import PaypalIcon from "@assets/icons/Paypal.svg";
 import Mac from "@assets/icons/Mac.svg";
 import Cash from "@assets/icons/Cash.svg";
+import CardCheapIcon from "@assets/icons/cardCheap.svg";
 export {
   CartIcon,
   OrdersIcon,
@@ -35,4 +36,5 @@ export {
   PaypalIcon,
   Mac,
   Cash,
+  CardCheapIcon
 };

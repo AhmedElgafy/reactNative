@@ -66,6 +66,12 @@ export default function Layout() {
       />
       <Stack.Screen name="edit-profile" options={{ title: "Edit Profile" }} />
       <Stack.Screen name="my-orders" options={{ title: "My Orders" }} />
+      <Stack.Screen name="add-card" options={{ title: "Add Card" }} />
+      <Stack.Screen name="notification" options={{ title: "Notification" }} />
+      <Stack.Screen
+        name="password-setting"
+        options={{ title: "Password Setting" }}
+      />
       <Stack.Screen
         name="payment-method"
         options={{ title: " Payment Method" }}
