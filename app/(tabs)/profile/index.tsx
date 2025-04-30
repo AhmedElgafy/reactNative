@@ -1,26 +1,14 @@
-import { View, Text, Image, ScrollView } from "react-native";
+import { View, Text, Image, ScrollView, Modal, Button } from "react-native";
 import ProfileImage from "@assets/images/profileImage.png";
 import React from "react";
-import {
-  HelpIcon,
-  LogoutIcon,
-  NotificationIcon,
-  OrdersIcon,
-  PaymentIcon,
-  PrivacyIcon,
-  ProfileIcon,
-  SettingIcon,
-  WishlistIcon,
-} from "@/components/ui/icons";
-import { Salmon } from "@/constants/Colors";
-import Body from "@/components/pages/home/profile/body";
-import Header from "@/components/pages/home/profile/header";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import Body from "@/components/pages/profile/body";
+import Header from "@/components/pages/profile/header";
 
 export default function Profile() {
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={{ flex: 1 }}>
+      <SafeAreaView style={{ flex: 1, position: "relative" }}>
         <ScrollView
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{ paddingBottom: 50 }}

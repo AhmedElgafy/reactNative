@@ -2,10 +2,10 @@ import { View, Text, SafeAreaView, ScrollView } from "react-native";
 import React from "react";
 import { Beige, Black, Dark, OrangeDark, Salmon } from "@/constants/Colors";
 import { CardCheapIcon } from "@/components/ui/icons";
-import Card from "@/components/pages/home/profile/add-card/card";
-import CardForm from "@/components/pages/home/profile/add-card/cardForm";
 import { useFormik } from "formik";
-import { CardI } from "@/components/pages/home/profile/types";
+import Card from "@/components/pages/profile/add-card/card";
+import CardForm from "@/components/pages/profile/add-card/cardForm";
+import { CardI } from "@/components/pages/profile/types";
 
 export default function AddCard() {
   const cardInitValues: CardI = {

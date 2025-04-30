@@ -14,6 +14,7 @@ interface Item {
   title: string;
   Icon: any;
   href: RelativePathString | ExternalPathString;
+  onPress?: () => void;
 }
 const bodyItems: Item[] = [
   {
@@ -45,6 +46,7 @@ const bodyItems: Item[] = [
     title: "Logout",
     Icon: LogoutIcon,
     href: "../",
+    onPress: () => {},
   },
 ];
 
@@ -78,6 +80,7 @@ export default function Body() {
           </View>
         );
       })}
+      
     </View>
   );
 }

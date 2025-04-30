@@ -2,8 +2,8 @@ import { View, Text, Image, ScrollView, SafeAreaView } from "react-native";
 import ProfileImage from "@assets/images/profileImage.png";
 import React from "react";
 import { Beige } from "@/constants/Colors";
-import ProfileForm from "@/components/pages/home/profile/edit-profile/profileForm";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import ProfileForm from "@/components/pages/profile/edit-profile/profileForm";
 
 export default function EditProfile() {
   return (

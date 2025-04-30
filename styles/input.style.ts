@@ -8,4 +8,8 @@ export const InputStyle = StyleSheet.create({
     borderRadius: 15,
     paddingHorizontal: 20,
   },
+  label: {
+    paddingVertical: 6,
+    fontWeight:"400"
+  },
 });

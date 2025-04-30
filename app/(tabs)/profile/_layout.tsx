@@ -68,6 +68,7 @@ export default function Layout() {
       <Stack.Screen name="my-orders" options={{ title: "My Orders" }} />
       <Stack.Screen name="add-card" options={{ title: "Add Card" }} />
       <Stack.Screen name="notification" options={{ title: "Notification" }} />
+      <Stack.Screen name="test" options={{ title: "Test" }} />
       <Stack.Screen
         name="password-setting"
         options={{ title: "Password Setting" }}

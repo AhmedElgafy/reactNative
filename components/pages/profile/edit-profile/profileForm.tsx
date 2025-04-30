@@ -46,7 +46,7 @@ export default function ProfileForm() {
               {formFields.map(({ label, key, keyboard, renderItem }, index) => {
                 return (
                   <View key={index}>
-                    <Text style={{ paddingVertical: 6 }}>{label}</Text>
+                    <Text style={[InputStyle.label]}>{label}</Text>
                     {!renderItem && (
                       <TextInput
                         style={styles.fieldStyle}
